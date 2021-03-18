@@ -14,7 +14,7 @@ $(function(){
     $('.sidebar__list-item').on('click', function(){
         if (windowWidth <= 1024){
             $('.sidebar__checker--left').focus()
-            $('.sidebar__list-item').toggleClass('sidebar__list-item--active')
+            $(this).toggleClass('sidebar__list-item--active')
             $('.menu__horizontal').siblings().attr('href', '#')
         }
     })
